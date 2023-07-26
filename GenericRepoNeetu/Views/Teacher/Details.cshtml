@@ -1,0 +1,36 @@
+﻿@model GenericRepoNeetu.Models.Teacher
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Teacher</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.tName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.tName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.tAge)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.tAge)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.tCity)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.tCity)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.tid">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
